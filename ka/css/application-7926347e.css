@@ -1,0 +1,54 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+.top-notification-bar {
+    background-color: #9bb69b;
+    color: white;
+    z-index: 50;
+}
+
+.discount-badge {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: linear-gradient(135deg, #ff3366 60%, #ff6b81 100%);
+        color: #fff;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 0.5em 1em;
+        border-radius: 9999px;
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 8px 0 rgba(255,51,102,0.15);
+        transform: rotate(8deg) scale(1);
+        z-index: 20;
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+        user-select: none;
+}
+.discount-badge:hover {
+        transform: rotate(0deg) scale(1.08);
+        box-shadow: 0 4px 16px 0 rgba(255,51,102,0.25);
+}
+@media (max-width: 768px) {
+    .discount-badge {
+        top: 8px;
+        right: 8px;
+        font-size: 0.95rem;
+        min-width: 38px;
+        min-height: 38px;
+        padding: 0.4em 0.8em;
+    }
+}
+
+
