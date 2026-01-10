@@ -19,7 +19,7 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
 
-    <link rel="stylesheet" href="../css/application-7218155b.css" data-turbo-track="reload">
+    <link rel="stylesheet" href="../css/application-7300f215.css" data-turbo-track="reload">
 <link rel="stylesheet" href="../css/tailwind-b8592a05.css" data-turbo-track="reload">
     
 
@@ -126,7 +126,7 @@
 
   <div class="flex items-center w-full">
     <h1 class="text-2xl md:text-[1.75rem] font-normal mb-0 text-[#6b8e6b] tracking-tight leading-tight">
-      <a class="hover:underline text-[#6b8e6b]" href="http://localhost:3000/ka/index.html">KBeautyGeo</a>
+      <a class="hover:underline text-[#6b8e6b]" href="../index.html">KBeautyGeo</a>
     </h1>
     <!-- Hamburger only on mobile (CSS-only) -->
     <div class="mobile-menu-wrapper md:hidden ml-auto relative flex items-center">
@@ -143,16 +143,29 @@
         <button type="button" class="absolute top-3 right-3 text-gray-400 hover:text-[#6b8e6b] text-2xl leading-none" aria-label="Закрыть" style="background:none;border:none;cursor:pointer;padding:0;" onclick="document.getElementById('menu-toggle').checked=false">×</button>
         <h2 class="text-lg font-semibold text-[#6b8e6b] mb-4">Mobile Navigation Menu</h2>
           <div class="mb-4">
-            <div class="text-xs font-bold text-gray-500 mb-2">კატეგორიები</div>
+            <a href="../categories.html" class="text-xs font-bold text-gray-500 mb-2 hover:text-[#6b8e6b]">კატეგორიები</a>
             <ul>
-                <li class="mb-2"><a href="#" class="text-gray-800 hover:text-[#6b8e6b] text-base no-underline">📦 ჰიდროფილური ზეთები &amp; ბალმები</a></li>
-                <li class="mb-2"><a href="#" class="text-gray-800 hover:text-[#6b8e6b] text-base no-underline">📦 მზისგან დამცავები</a></li>
+                <li class="mb-2"><a href="../categories/1.html" class="text-gray-800 hover:text-[#6b8e6b] text-base no-underline">📦 ჰიდროფილური ზეთები &amp; ბალმები</a></li>
+                <li class="mb-2"><a href="../categories/2.html" class="text-gray-800 hover:text-[#6b8e6b] text-base no-underline">📦 მზისგან დამცავები</a></li>
             </ul>
           </div>
-          <div>
-            <div class="text-xs font-bold text-gray-500 mb-2">ბრენდები</div>
+          <div class="mb-4">
+            <a href="../brands.html" class="text-xs font-bold text-gray-500 mb-2 hover:text-[#6b8e6b]">ბრენდები</a>
             <ul>
-                <li class="mb-2"><a href="#" class="text-gray-800 hover:text-[#6b8e6b] text-base no-underline">ბრენდი</a></li>
+                <li class="mb-2"><a href="../brands/1.html" class="text-gray-800 hover:text-[#6b8e6b] text-base no-underline">ბრენდი</a></li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <a href="../ingredients.html" class="text-xs font-bold text-gray-500 mb-2 hover:text-[#6b8e6b]">ინგრედიენტები</a>
+            <ul>
+                <li class="mb-2"><a href="../ingredients/1.html" class="text-gray-800 hover:text-[#6b8e6b] text-base no-underline">კაკაოს კარაქი</a></li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <span class="text-xs font-bold text-gray-500 mb-2">გვერდები</span>
+            <ul>
+                <li class="mb-2"><a href="../pages/delivery_terms.html" class="text-gray-800 hover:text-[#6b8e6b] text-base no-underline">მიწოდების პირობები</a></li>
             </ul>
           </div>
       </nav>
@@ -160,8 +173,8 @@
   </div>
 
   <div class="flex items-center gap-1 bg-gray-50 p-0.5 rounded-md border border-gray-200">
-    <a class="lang-btn text-xs font-normal py-1 px-2.5 rounded border-none cursor-pointer transition-all active" href="../../ka/index.html">ქართ</a>
-    <a class="lang-btn text-xs font-normal py-1 px-2.5 rounded border-none cursor-pointer transition-all bg-transparent text-gray-500" href="../../en/index.html">ENG</a>
+    <a class="lang-btn text-xs font-normal py-1 px-2.5 rounded border-none cursor-pointer transition-all active" href="../index.html">ქართ</a>
+    <a class="lang-btn text-xs font-normal py-1 px-2.5 rounded border-none cursor-pointer transition-all bg-transparent text-gray-500" href="../index.html">ENG</a>
   </div>
 
 
@@ -179,7 +192,9 @@
     <!-- Categories Dropdown -->
       <div class="menu-parent relative w-full md:w-auto">
         <div class="w-full md:w-auto flex items-center justify-between md:justify-start px-4 py-2 text-lg font-medium text-gray-700 bg-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#6b8e6b] transition-all cursor-pointer select-none" tabindex="0">
-          <span class="flex items-center gap-2"><span>🛒</span> კატეგორიები</span>
+          <a href="../categories.html" class="flex items-center gap-2 hover:text-[#6b8e6b] transition-all">
+            <span>🛒</span> კატეგორიები
+          </a>
           <svg class="ml-2 h-4 w-4 md:block" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
         </div>
         <div class="menu-popup md:absolute md:left-0 md:z-20 md:mt-0 md:w-80 w-full md:bg-white md:shadow-lg md:border md:border-gray-100 md:border-t-2 md:border-t-gray-100 p-2 max-h-80 overflow-y-auto grid grid-cols-1 transition-all duration-200 ease-in-out" style="min-width: 0; border-radius: 0;">
@@ -195,7 +210,9 @@
     <!-- Brands Dropdown -->
       <div class="menu-parent relative w-full md:w-auto">
         <div class="w-full md:w-auto flex items-center justify-between md:justify-start px-4 py-2 text-lg font-medium text-gray-700 bg-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#6b8e6b] transition-all cursor-pointer select-none" tabindex="0">
-          <span class="flex items-center gap-2"><span>✨</span> ბრენდები</span>
+          <a href="../brands.html" class="flex items-center gap-2 hover:text-[#6b8e6b] transition-all">
+            <span>✨</span> ბრენდები
+          </a>
           <svg class="ml-2 h-4 w-4 md:block" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
         </div>
         <div class="menu-popup md:absolute md:left-0 md:z-20 md:mt-0 md:w-80 w-full md:bg-white md:shadow-lg md:border md:border-gray-100 md:border-t-2 md:border-t-gray-100 p-2 max-h-80 overflow-y-auto grid grid-cols-1 transition-all duration-200 ease-in-out" style="min-width: 0; border-radius: 0;">
@@ -206,9 +223,30 @@
       </div>
 
     <!-- Ingredients Dropdown -->
+      <div class="menu-parent relative w-full md:w-auto">
+        <div class="w-full md:w-auto flex items-center justify-between md:justify-start px-4 py-2 text-lg font-medium text-gray-700 bg-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#6b8e6b] transition-all cursor-pointer select-none" tabindex="0">
+          <a href="../ingredients.html" class="flex items-center gap-2 hover:text-[#6b8e6b] transition-all">
+            <span>✨</span> ინგრედიენტები
+          </a>
+          <svg class="ml-2 h-4 w-4 md:block" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+        </div>
+        <div class="menu-popup md:absolute md:left-0 md:z-20 md:mt-0 md:w-80 w-full md:bg-white md:shadow-lg md:border md:border-gray-100 md:border-t-2 md:border-t-gray-100 p-2 max-h-80 overflow-y-auto grid grid-cols-1 transition-all duration-200 ease-in-out" style="min-width: 0; border-radius: 0;">
+            <a href="../ingredients/1.html" class="flex items-center py-2 px-3 text-[0.95rem] text-gray-700 rounded-md hover:text-[#6b8e6b] hover:bg-gray-50 transition-all no-underline">
+              <span>კაკაოს კარაქი</span>
+            </a>
+        </div>
+      </div>
 
 
     <!-- Pages List -->
+      <div class="w-full md:w-auto flex flex-row gap-2">
+          <a href="../pages/delivery_terms.html" class="flex items-center py-2 px-4 text-lg font-medium text-gray-700 bg-transparent rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#6b8e6b] transition-all">
+              <svg class="w-5 h-5 mr-2 text-red-500" fill="currentColor" viewbox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"></path>
+              </svg>
+            მიწოდების პირობები
+          </a>
+      </div>
 
   </div>
 </div>
@@ -222,83 +260,6 @@
       ჰიდროფილური ზეთები &amp; ბალმები
     </h2>
     <div>
-      <!-- BEGIN app/views/main/_product.html.erb
--->
-<div class="mb-10 p-4 md:p-8 bg-white rounded-2xl shadow border border-gray-100 transition-all hover:shadow-lg">
-  <div class="mb-2 -mt-2 md:mb-4 md:-mt-4 flex items-center justify-between">
-    <span class="text-xs text-gray-400 select-all bg-white/80 px-2 py-0.5 rounded" title="ID продукта для поддержки">[ 000001 ]</span>
-  </div>
-  <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-stretch">
-    <div class="relative w-full md:w-80 shrink-0 rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center" style="min-height: 400px; max-height: 400px;">
-        <img class="w-full h-auto max-h-72 md:max-h-80 object-contain block rounded-xl export-data transition-transform duration-200 hover:scale-105" data-record-type="Product" data-record-id="1" src="../images/Product_1_0_94588f0c9868c654d2acb2fe55c08b61.png">
-
-    </div>
-
-    <div class="flex flex-col flex-grow w-full justify-between">
-
-      <h2 class="text-xl md:text-2xl font-semibold text-[#6b8e6b] mb-4 leading-snug tracking-tight">
-        <a class="hover:underline text-[#6b8e6b]" href="../products/1.html">Dr.Althea Pore Refresh Grinding Cleansing Balm</a>
-      </h2>
-
-        <div class="mb-2 mt-2 text-sm">
-          <span class="font-bold text-gray-600">Brand:</span>
-          <a class="hover:underline text-[#6b8e6b] font-semibold" href="../brands/1.html">ბრენდი</a>
-        </div>
-
-
-
-        <div class="mb-1 mt-2 text-sm">
-          <span class="font-bold text-gray-600">Description:</span>
-        </div>
-        <div class="prose prose-sm max-w-none mb-4 text-[0.97rem] text-gray-600 leading-relaxed">
-          <ul>
-<li>ღრმად წმენდს ფორებს</li>
-<li>არეგულირებს ცხიმოვანი<br>ჯირკვლების აქტივობას, შთანთქავს<br>ჭარბ ცხიმს</li>
-<li>ამშვიდებს ანთებას</li>
-<li>არ აშრობს კანს</li>
-<li>აქვს მსუბუქი მატირების ეფექტი</li>
-<li>მოუხდება კომბინირებულ, ცხიმიან,<br>ფორების დახშობისკენ მიდრეკილ<br>კანს</li>
-</ul>
-<div><br></div>
-<div>მთავარი აქტიური ინგრედიენტები:<br>უაიაზულენი, მწვანე ჩაის ექსტრაქტი,<br>ალოე ვერას ექსტრაქტი, სოიოს ზეთი,<br>ჟოჟობას ზეთი, ტოკოფეროლი</div>
-<div><br></div>
-        </div>
-
-        <!-- Вариант 1: Яркий заголовок -->
-        <div class="pt-4 border-t border-gray-100 mt-auto">
-          <div class="mb-3">
-          </div>
-          <div class="flex flex-wrap gap-2 justify-start items-stretch sm:justify-start">
-              <div class="w-full flex justify-center sm:w-auto">
-                <!-- BEGIN app/views/main/_product_variant.html.erb
--->  <div class="bg-white rounded-xl shadow border border-[#ffe066] flex flex-col group transition-all duration-300 ease-in-out hover:shadow-2xl hover:bg-[#fffbe6] relative mr-2 w-full sm:w-fit" style="min-width: 100px; height: auto; padding: 0.5rem;">
-  <div class="flex items-center justify-center gap-1 w-full mb-0" style="flex-wrap: wrap; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-    <h3 class="text-[14px] md:text-[15px] font-bold text-[#6b8e6b] leading-tight tracking-tight m-0 p-0 text-center mt-5" style="white-space: nowrap; display: flex; align-items: center; justify-content: center;">
-      50 მლ
-    </h3>
-  </div>
-  <div style="border-bottom: 0.5px solid #d1d5db; width: 100%; margin: 6px 0 6px 0;"></div>
-  <div class="flex flex-col items-center justify-center flex-1 mt-0 mb-0 w-full" style="min-height: 40px;">
-      <div class="flex items-end justify-center gap-1 md:gap-2 w-full">
-        <span class="text-lg md:text-xl font-bold text-black leading-tight">
-          11.4 ₾
-        </span>
-          <span class="text-sm md:text-base font-medium text-gray-400 line-through">
-            12.3 ₾
-          </span>
-      </div>
-  </div>
-</div>
-<!-- END app/views/main/_product_variant.html.erb -->
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- END app/views/main/_product.html.erb -->
       <!-- BEGIN app/views/main/_product.html.erb
 -->
 <div class="mb-10 p-4 md:p-8 bg-white rounded-2xl shadow border border-gray-100 transition-all hover:shadow-lg">
